@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Clients/Produits/Type de produit/TVA">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#goToClientView" text="Clients" />
+              <MenuItem mnemonicParsing="false" onAction="#goToProduitView" text="Produits" />
+              <MenuItem mnemonicParsing="false" onAction="#goToTypeView" text="Types de produit" />
+              <MenuItem mnemonicParsing="false" onAction="#goToTVAView" text="TVA" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Réductions">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#goToReductionSurProduitView" text="Sur un produit" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToReductionSurTypeProduitView" text="Sur un type de produit" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToReductionSurTotalView" text="Sur le total de la facture" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Factures">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToFacturationView" text="Réaliser une facture" />
+                  <MenuItem mnemonicParsing="false" onAction="#goToFactureView" text="Voir les factures" />
+               </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="Changer de persistance">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#setDaoMySql" text="MySql" />
+                  <MenuItem mnemonicParsing="false" onAction="#setDaoListeMemoire" text="Liste mémoire" />
+               </items>
+         </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+   	<StackPane fx:id="conteneur" />
+   </center>
+</BorderPane>

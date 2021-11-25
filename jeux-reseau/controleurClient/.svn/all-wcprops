@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/!svn/ver/111/src/controleurClient
+END
+ControleurPenduClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/111/src/controleurClient/ControleurPenduClient.java
+END
+ControleurTicTacToe.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/!svn/ver/111/src/controleurClient/ControleurTicTacToe.java
+END
+ControleurVuePrincipaleClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/107/src/controleurClient/ControleurVuePrincipaleClient.java
+END
